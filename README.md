@@ -9,7 +9,8 @@
 
 2.	Configuration Parameter :  
 
-	  	Name: The ACL Name. Must be unique.  
+	  	Name   
+		= The ACL Name. Must be unique.  
 	  	
 	  	PropertiesProcessEntityID  
 	  	= To restrict ACL on specific process. One Process ID only.  
