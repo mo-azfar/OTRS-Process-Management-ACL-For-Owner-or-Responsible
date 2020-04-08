@@ -29,7 +29,7 @@
 	
 3. Only 1 ACL is activate by default. If you have additional Process Management or Activity to apply this ACL, please activate another config (Valid="0" to Valid="1") and configure it.  
 
-4. Additonally, if the provided config not enough, please write additional xml param to the xml file and rebuild config.  
+4. Additonally, if the provided config not enough, you may write additional xml param to the xml file.  
 **Setting Name** , **Name** must be **unique** !
 
     		Setting Name = <Setting Name="Ticket::Acl::Module###10-Ticket::Acl::Module" Required="0" Valid="1">
