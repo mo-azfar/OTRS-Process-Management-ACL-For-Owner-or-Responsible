@@ -1,4 +1,6 @@
 # --
+# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
@@ -63,11 +65,11 @@ sub Run {
     my $AID = $Param{Config}->{PropertiesActivityEntityID};
  
     #For activity dialog id owner view
-    my $OWNER_ADID = $Param{Config}->{OwnerActivityDialogEntityID};
+    my $OWNER_ADID = $Param{Config}->{PossibleActivityDialogEntityIDOwner};
     my @OWNER_ADIDs = split /;/, $OWNER_ADID;
     
     #For activity dialog id resposible view
-    my $RESPONSIBLE_ADID = $Param{Config}->{ResponsibleActivityDialogEntityID};
+    my $RESPONSIBLE_ADID = $Param{Config}->{PossibleActivityDialogEntityIDResponsible};
     my @RESPONSIBLE_ADIDs = split /;/, $RESPONSIBLE_ADID;
     
     if ( $OWNER_ADID ne "")
@@ -89,10 +91,10 @@ sub Run {
 				},
             },
 
-            # return possible options (black list)
+            # return possible options (white list)
             Possible => {
 
-                # possible ticket options (black list)
+                # possible ticket options (white list)
                 ActivityDialog => [@OWNER_ADIDs],
             },
         };
@@ -119,10 +121,10 @@ sub Run {
 				},
             },
 
-            # return possible options (black list)
+            # return possible options (white list)
             Possible => {
 
-                # possible ticket options (black list)
+                # possible ticket options (white list)
                 ActivityDialog => [@RESPONSIBLE_ADIDs],
             },
         };

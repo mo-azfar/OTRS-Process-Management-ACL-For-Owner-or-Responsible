@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="Ticket::Acl::Module###5-Ticket::Acl::Module" Required="0" Valid="1">
+        <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
+        <Navigation>Core::Ticket::ACL</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Acl::ProcessActivityDialogACL</Item>
+                <Item Key="Name">ACL 1</Item>
+                <Item Key="PropertiesProcessEntityID">Process-6f0562b1dc28260c1f3a3a7de9536a48</Item>
+                <Item Key="PropertiesActivityEntityID">Activity-8afb732b79348c0cab58c7fcc0a1d219</Item>
+                <Item Key="PossibleActivityDialogEntityIDOwner">ActivityDialog-a6b56730ee389258a0d63a1554c627d3;</Item>
+				<Item Key="PossibleActivityDialogEntityIDResponsible">ActivityDialog-7b76d8a244284f246cb83fb6bd0742fa;ActivityDialog-f72b398ff3c19059adfe01712a34e36c</Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="Ticket::Acl::Module###6-Ticket::Acl::Module" Required="0" Valid="0">
+        <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
+        <Navigation>Core::Ticket::ACL</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Acl::ProcessActivityDialogACL</Item>
+                <Item Key="Name">ACL 2</Item>
+                <Item Key="PropertiesProcessEntityID"></Item>
+                <Item Key="PropertiesActivityEntityID"></Item>
+                <Item Key="PossibleActivityDialogEntityIDOwner"></Item>
+				<Item Key="PossibleActivityDialogEntityIDResponsible"></Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="Ticket::Acl::Module###7-Ticket::Acl::Module" Required="0" Valid="0">
+        <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
+        <Navigation>Core::Ticket::ACL</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Acl::ProcessActivityDialogACL</Item>
+                <Item Key="Name">ACL 3</Item>
+                <Item Key="PropertiesProcessEntityID"></Item>
+                <Item Key="PropertiesActivityEntityID"></Item>
+                <Item Key="PossibleActivityDialogEntityIDOwner"></Item>
+				<Item Key="PossibleActivityDialogEntityIDResponsible"></Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="Ticket::Acl::Module###8-Ticket::Acl::Module" Required="0" Valid="0">
+        <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
+        <Navigation>Core::Ticket::ACL</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Acl::ProcessActivityDialogACL</Item>
+                <Item Key="Name">ACL 4</Item>
+                <Item Key="PropertiesProcessEntityID"></Item>
+                <Item Key="PropertiesActivityEntityID"></Item>
+                <Item Key="PossibleActivityDialogEntityIDOwner"></Item>
+				<Item Key="PossibleActivityDialogEntityIDResponsible"></Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="Ticket::Acl::Module###9-Ticket::Acl::Module" Required="0" Valid="0">
+        <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
+        <Navigation>Core::Ticket::ACL</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Acl::ProcessActivityDialogACL</Item>
+                <Item Key="Name">ACL 5</Item>
+                <Item Key="PropertiesProcessEntityID"></Item>
+                <Item Key="PropertiesActivityEntityID"></Item>
+                <Item Key="PossibleActivityDialogEntityIDOwner"></Item>
+				<Item Key="PossibleActivityDialogEntityIDResponsible"></Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
