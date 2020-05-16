@@ -69,6 +69,13 @@ sub Run {
     my $RESPONSIBLE_ADID = $Param{Config}->{PossibleActivityDialogEntityIDResponsible};
     my @RESPONSIBLE_ADIDs = split /;/, $RESPONSIBLE_ADID;
     
+    #for activity dialog id normal agent view
+    my @NORMAL_AGENTS = (@OWNER_ADIDs,@RESPONSIBLE_ADIDs);
+    
+    my %count;
+    $count{ $_ }++ for @NORMAL_AGENTS;
+    my @AGENTS = grep { $count{ $_ } == 1 } @NORMAL_AGENTS;
+    
     if ( $OWNER_ADID ne "")
     {
         if ( $Param{UserID} eq $Ticket{OwnerID} && $Ticket{OwnerID} ne $Ticket{ResponsibleID} )
@@ -129,6 +136,32 @@ sub Run {
         }
     }
     
+    #for non owner or resposible view
+    if ( $Param{UserID} ne $Ticket{ResponsibleID} && $Param{UserID} ne $Ticket{OwnerID} )
+    {
+        $Param{Acl}->{$ACLName} = {
+
+        # match properties
+        Properties => {
+
+            # current ticket match properties
+            Ticket => {
+                TicketID => [ $Param{TicketID} ],
+            },
+            Process => {
+                ProcessEntityID => [$PID],
+                ActivityEntityID => [$AID],
+            },
+        },
+
+        # return possible not options (black list)
+        PossibleNot => {
+
+            # possible not ticket options (black list)
+            ActivityDialog => [@AGENTS],
+        },
+        };
+    }
 
     return 1;
 }
