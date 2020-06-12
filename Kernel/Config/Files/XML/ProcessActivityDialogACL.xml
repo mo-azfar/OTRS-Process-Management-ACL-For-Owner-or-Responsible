@@ -14,8 +14,6 @@
             </Hash>
         </Value>
     </Setting>
-</otrs_config>
-<otrs_config version="2.0" init="Application">
     <Setting Name="Ticket::Acl::Module###6-Ticket::Acl::Module" Required="0" Valid="0">
         <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
         <Navigation>Core::Ticket::ACL</Navigation>
@@ -30,8 +28,6 @@
             </Hash>
         </Value>
     </Setting>
-</otrs_config>
-<otrs_config version="2.0" init="Application">
     <Setting Name="Ticket::Acl::Module###7-Ticket::Acl::Module" Required="0" Valid="0">
         <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
         <Navigation>Core::Ticket::ACL</Navigation>
@@ -46,8 +42,6 @@
             </Hash>
         </Value>
     </Setting>
-</otrs_config>
-<otrs_config version="2.0" init="Application">
     <Setting Name="Ticket::Acl::Module###8-Ticket::Acl::Module" Required="0" Valid="0">
         <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
         <Navigation>Core::Ticket::ACL</Navigation>
@@ -62,8 +56,6 @@
             </Hash>
         </Value>
     </Setting>
-</otrs_config>
-<otrs_config version="2.0" init="Application">
     <Setting Name="Ticket::Acl::Module###9-Ticket::Acl::Module" Required="0" Valid="0">
         <Description Translatable="1">ACL module that restrict Activity Dialog ID to current logged user and ticket owner / responsible.  Name param must be unique!</Description>
         <Navigation>Core::Ticket::ACL</Navigation>
